@@ -1,0 +1,16 @@
+.loginButton{
+    padding: 4px 8px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: var(--psw-c-t-accent);
+}
+
+.loginButton:hover{
+    background-color: var(--psw-c-t-accent-hover);
+}
+
+.loginButton:active{
+    background-color:var(--psw-c-t-accent-pressed);
+}

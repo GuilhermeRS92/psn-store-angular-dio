@@ -1,0 +1,15 @@
+.tags{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-left: 20px;
+    .tag{
+        color: white;
+        font-weight: 500;
+        padding: 2px 5px;
+        border: solid 1.5px white;
+        background-color: var(--psw-c-t-placeholder);
+    }
+}

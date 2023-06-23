@@ -1,0 +1,38 @@
+.card-container{
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    aspect-ratio: 9/10;
+    border-radius: 10px;
+    overflow: hidden;
+    .informations-container{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .game-tags{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .background-image{
+        position: absolute;
+        top: 0;
+        z-index: -10;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .game-front{
+            width: 100%;
+        }
+    }
+}
+
+.card-container:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,7 @@
+<header class="top-menu-container">
+    <a [routerLink]="['latest']"  class="link"><img class="logo" src="./assets/images/logos/playstation-store-logo.png" alt="Playstation Store Logo"></a>
+    <nav class="nav-menu">
+        <app-button *ngFor="let button of navButton" [buttonName]="button.buttonName" [route]="button.route"></app-button>
+    </nav>
+    <app-button-login class="loginButton" [buttonName]="loginButton.name" [route]="loginButton.route"></app-button-login>
+</header>

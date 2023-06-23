@@ -1,0 +1,19 @@
+.link{
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.link:hover{
+    background-color: var(--psw-c-t-disabled-hover);
+}
+
+.actived{
+    background-color: var(--psw-c-t-actived);
+}
+
+.actived:hover{
+    background-color: var(--psw-c-t-actived-hover);
+}

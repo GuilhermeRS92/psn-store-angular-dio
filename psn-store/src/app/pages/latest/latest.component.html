@@ -1,0 +1,8 @@
+<main class="main-container">
+    <app-banner></app-banner>
+    <div class="latests-games">
+        <div class="card-container" *ngFor="let game of gamesList">
+            <app-card-game [gameInformation]="game"></app-card-game>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,63 @@
+.banner-container{
+    display: flex;
+    align-items: flex-end;
+    height: 430px;
+    position: relative;
+    .game-logo-image{
+        right: 50%;
+        position: absolute;
+        z-index: 2;
+    }
+    .character-image{
+        left: 50%;
+        bottom: 0;
+        height: 430px;
+        position: absolute;
+        z-index: 1;
+    }
+    .background-container{
+        width: 100vw;
+        height: 400px;
+        background-image: url("/assets/images/banner-latest/background.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .background-container {
+      background-attachment: scroll;
+    }
+}
+
+@media(max-width: 800px){
+    .banner-container{
+        .character-image{
+            left: 40%;
+        }
+        .game-logo-image{
+            right: 40%;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .banner-container{
+        .character-image{
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .game-logo-image{    
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+}

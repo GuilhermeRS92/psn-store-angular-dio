@@ -1,0 +1,16 @@
+<div class="card-container">
+    <div class="informations-container">
+        <div class="game-tags">
+            <app-platform-container [platforms]="gameInformation.platforms"></app-platform-container>
+            <app-tags-container [tags]="gameInformation.tags"></app-tags-container>
+        </div>
+        <app-price-container 
+            [name]="gameInformation.name" 
+            [information]="gameInformation.information"
+            [price]="gameInformation.price"
+        ></app-price-container>
+    </div>
+    <span class="background-image">
+        <img class="game-front" [src]="gameInformation.frontImage" alt="Spiderman 2">
+    </span>
+</div>
